@@ -48,9 +48,6 @@ local proof of concept against the existing nixpkgs Taler module. Not a
 public package yet — see [docs/ROADMAP.md](docs/ROADMAP.md) for the
 delivery plan this proposal funds.
 
-Submitted to NGI TALER, as a proposal independent of the concurrent
-nixos-iot-edge submission to NGI Fediversity.
-
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
