@@ -48,6 +48,12 @@ local proof of concept against the existing nixpkgs Taler module. Not a
 public package yet — see [docs/ROADMAP.md](docs/ROADMAP.md) for the
 delivery plan this proposal funds.
 
+## Funding
+
+Proposed to NGI TALER (NLnet), August 2026. Developed alongside
+nixos-iot-edge, proposed to NGI Fediversity — separate codebases,
+separate protocol domains, neither depends on the other being funded.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
