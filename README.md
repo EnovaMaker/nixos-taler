@@ -39,8 +39,10 @@ covers the bare daemons. Running an exchange or merchant in production
 also needs an auditor, certificate management, backups, secrets
 rotation, sandboxing, and safe AML/KYC configuration — none of which
 exist there yet. This project fills that gap as an extension to their
-module rather than a competing one, to be coordinated with its maintainers
-before any upstream PR.
+module rather than a competing one, coordinated with its maintainers before
+any upstream PR — that conversation is open at
+[ngi-nix/forge#944](https://github.com/ngi-nix/forge/issues/944), where the
+shape of the contribution is being agreed rather than assumed.
 
 ## Status
 
