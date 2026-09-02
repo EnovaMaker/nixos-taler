@@ -12,13 +12,19 @@ secrets management, no hardened systemd confinement, and no ergonomic
 options for the AML/KYC legitimization rules GNU Taler enforces by
 default — operators are left writing raw INI by hand for all of that.
 
-This project proposes the layer on top: `services.nixosTaler`, adding an
-auditor role, typed AML/KYC options, TLS/ACME termination, encrypted
-backups, sops/agenix secrets, and full systemd sandboxing — submitted as
-an extension to the existing nixpkgs module rather than a competing one.
+This project proposes the layer on top: an auditor role, typed AML/KYC
+options, TLS/ACME termination, encrypted backups, sops/agenix secrets,
+and full systemd sandboxing — submitted as an extension to the existing
+nixpkgs module rather than a competing one.
+
+The option tree would extend `services.taler.*` directly. That is the
+nixpkgs `ngi` team's preference, given in
+[ngi-nix/forge#944](https://github.com/ngi-nix/forge/issues/944); the
+proposal as submitted sketched a separate `services.nixosTaler` tree,
+before that question had been put to them.
 
 ```nix
-services.nixosTaler = {
+services.taler = {
   enable = true;
   role = "both"; # exchange | merchant | both
   currency = "EUR";
@@ -40,9 +46,10 @@ also needs an auditor, certificate management, backups, secrets
 rotation, sandboxing, and safe AML/KYC configuration — none of which
 exist there yet. This project fills that gap as an extension to their
 module rather than a competing one, coordinated with its maintainers before
-any upstream PR — that conversation is open at
-[ngi-nix/forge#944](https://github.com/ngi-nix/forge/issues/944), where the
-shape of the contribution is being agreed rather than assumed.
+any upstream PR — that conversation happened at
+[ngi-nix/forge#944](https://github.com/ngi-nix/forge/issues/944), where
+they confirmed the direction is welcome, named the option tree they
+prefer, and asked that changes arrive in small, reviewable portions.
 
 ## Status
 
