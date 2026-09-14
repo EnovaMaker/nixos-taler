@@ -60,9 +60,7 @@ delivery plan this proposal funds.
 
 ## Funding
 
-Proposed to NGI TALER (NLnet), August 2026. Developed alongside
-nixos-iot-edge, proposed to NGI Fediversity — separate codebases,
-separate protocol domains, neither depends on the other being funded.
+Proposed to NGI TALER (NLnet), August 2026.
 
 ## Contributing
 
