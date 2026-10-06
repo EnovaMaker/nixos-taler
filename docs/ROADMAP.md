@@ -1,7 +1,6 @@
 # Roadmap
 
-What this proposal delivers, by phase. Budget and timeline detail is in
-the funding submission.
+Planned phases.
 
 | Phase | Deliverable |
 |-------|-------------|

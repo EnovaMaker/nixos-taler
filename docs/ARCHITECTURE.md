@@ -1,7 +1,7 @@
 # Architecture (design)
 
-High-level approach — this is the design this proposal funds building
-out, not a description of a finished system.
+High-level approach — the planned design, not a description of a finished
+system.
 
 ```
                     nixpkgs (existing, minimal)
@@ -27,7 +27,7 @@ systemd hardening  ·  AML/KYC typed options  ·  admin/merchant CLI
   needed to run any of this outside a lab environment.
 
 The exact NixOS options surface, CLI, and how this layers onto the
-existing upstream module are part of what this proposal delivers — see
+existing upstream module are part of the plan — see
 [ROADMAP.md](ROADMAP.md).
 
 ## Open questions

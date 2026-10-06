@@ -1,6 +1,6 @@
 # nixos-taler
 
-**A production-operations layer for GNU Taler on NixOS — proposed for NGI TALER**
+**A production-operations layer for GNU Taler on NixOS**
 
 ## The idea
 
@@ -14,14 +14,12 @@ default — operators are left writing raw INI by hand for all of that.
 
 This project proposes the layer on top: an auditor role, typed AML/KYC
 options, TLS/ACME termination, encrypted backups, sops/agenix secrets,
-and full systemd sandboxing — submitted as an extension to the existing
+and full systemd sandboxing — designed as an extension to the existing
 nixpkgs module rather than a competing one.
 
 The option tree would extend `services.taler.*` directly. That is the
 nixpkgs `ngi` team's preference, given in
-[ngi-nix/forge#944](https://github.com/ngi-nix/forge/issues/944); the
-proposal as submitted sketched a separate `services.nixosTaler` tree,
-before that question had been put to them.
+[ngi-nix/forge#944](https://github.com/ngi-nix/forge/issues/944).
 
 ```nix
 services.taler = {
@@ -33,10 +31,8 @@ services.taler = {
 };
 ```
 
-This repository holds the design and early groundwork for the proposal
-submitted to the NGI TALER open call (NLnet, European Commission Next
-Generation Internet programme). See [docs/ROADMAP.md](docs/ROADMAP.md) for
-what the requested funding delivers.
+This repository holds the design and early groundwork. See
+[docs/ROADMAP.md](docs/ROADMAP.md) for the planned phases.
 
 ## Why this gap
 
@@ -53,14 +49,9 @@ prefer, and asked that changes arrive in small, reviewable portions.
 
 ## Status
 
-Early-stage: architecture drafted, core module structure validated in a
-local proof of concept against the existing nixpkgs Taler module. Not a
-public package yet — see [docs/ROADMAP.md](docs/ROADMAP.md) for the
-delivery plan this proposal funds.
-
-## Funding
-
-Proposed to NGI TALER (NLnet), August 2026.
+Early-stage: architecture drafted; a private proof of concept exists. Not a
+public package yet — see [docs/ROADMAP.md](docs/ROADMAP.md) for the planned
+phases.
 
 ## Contributing
 
